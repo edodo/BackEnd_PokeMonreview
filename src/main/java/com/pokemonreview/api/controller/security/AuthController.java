@@ -3,6 +3,7 @@ package com.pokemonreview.api.controller.security;
 import com.pokemonreview.api.dto.security.AuthResponseDto;
 import com.pokemonreview.api.dto.security.LoginDto;
 import com.pokemonreview.api.dto.security.UserDto;
+import com.pokemonreview.api.exceptions.ErrorObject;
 import com.pokemonreview.api.jwt.JWTGenerator;
 import com.pokemonreview.api.models.security.RoleEntity;
 import com.pokemonreview.api.models.security.UserEntity;
@@ -10,7 +11,6 @@ import com.pokemonreview.api.repository.security.RoleRepository;
 import com.pokemonreview.api.repository.security.UserRepository;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -21,9 +21,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -49,9 +47,12 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody UserDto userDto) {
+    public ResponseEntity<?> register(@RequestBody UserDto userDto) {
         if (userRepository.existsByUsername(userDto.getUsername())) {
-            return new ResponseEntity<>("Username is taken!", HttpStatus.BAD_REQUEST);
+            // return new ResponseEntity<>("Username is taken!", HttpStatus.BAD_REQUEST);
+            //return new BadResourceException("존재하는 UserName 입니다.");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(ErrorObject.builder().message("이미 존재하는 UserName 입니다.").build());
         }
 
         UserEntity user = new UserEntity();
