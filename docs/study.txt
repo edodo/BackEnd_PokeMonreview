@@ -1,0 +1,537 @@
+
+백명숙(강사) 수신자 모두 9:11 AM
+안녕하세요? 강의자료 링크입니다. https://future-pizza-08b.notion.site/VueJs3-0-Spring-Boot-REST-API-d040aba4bc3c4068937ad1b0921b685e
+
+이혜민(대흥정보) 수신자 모두 9:13 AM
+네
+개인계정입니다
+네 설치하였습니다
+괜찮았어요
+우분투는 안되어있ㅇ어요
+근데 실행잘됩니다
+네 윈도우10입니다
+
+백명숙(강사) 수신자 모두 9:14 AM
+docker --version
+
+이혜민(대흥정보) 수신자 모두 9:14 AM
+네 버전 뜹니다
+네 뜹니다
+도커버전 24인데 괜찮은건가요
+??
+
+이혜민(대흥정보) 수신자 모두 9:22 AM
+개발에서 spring쓰고
+vuejs2 쓰고있습니다
+네 맞습니다
+네 안해봤습니다
+배포는 리눅스서버로
+하고잇습니다
+네
+네
+플로그인 설치 안되어있습니다
+
+이혜민(대흥정보) 수신자 모두 9:28 AM
+네
+
+백명숙(강사) 수신자 모두 9:30 AM
+https://marketplace.visualstudio.com/items?itemName=Vue.volar
+
+이혜민(대흥정보) 수신자 모두 9:31 AM
+잠시만요
+설치안되어있습니다
+
+백명숙(강사) 수신자 모두 9:33 AM
+https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets
+https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+https://marketplace.visualstudio.com/items?itemName=thekalinga.bootstrap4-vscode
+https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+
+이혜민(대흥정보) 수신자 모두 9:40 AM
+없습니다
+
+백명숙(강사) 수신자 모두 9:41 AM
+https://hub.docker.com/
+https://hub.docker.com/_/mariadb
+docker pull mariadb:10.4.16
+docker images -a
+
+백명숙(강사) 수신자 모두 9:48 AM
+docker images -a
+docker ps -a
+docker run --name mariadb -d -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=maria mariadb:10.4.16 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+강의자료 링크입니다. https://www.notion.so/VueJs3-0-Spring-Boot-REST-API-d040aba4bc3c4068937ad1b0921b685e
+
+사용자 수신자 모두 9:51 AM
+오전회의 하고 와서
+지금 노션 보면서 설치 하고 있습니다
+
+백명숙(강사) 수신자 모두 9:52 AM
+10시에 시작합니다~
+
+사용자 수신자 백명숙(강사) (DM) 10:00 AM
+장애 회의가 있어서 천천히 쫓아가도록 하겠습니다
+
+백명숙(강사) 수신자 사용자 (DM) 10:00 AM
+네에 알겠습니다~
+
+이혜민(대흥정보) 수신자 모두 10:01 AM
+네
+
+백명숙(강사) 수신자 모두 10:03 AM
+docker exec -it mariadb /bin/bash
+
+이혜민(대흥정보) 수신자 모두 10:04 AM
+네
+
+백명숙(강사) 수신자 모두 10:05 AM
+show databases;
+use mysql;
+create database boot_db;
+show databases;
+CREATE USER boot@% IDENTIFIED BY boot;
+GRANT ALL PRIVILEGES ON boot_db.* TO boot@%;
+flush privileges;
+select user, host from user;
+
+이혜민(대흥정보) 수신자 모두 10:10 AM
+네
+
+백명숙(강사) 수신자 모두 10:13 AM
+docker images | findstr maria
+docker container ls
+
+백명숙(강사) 수신자 모두 10:20 AM
+docker container stop
+docker start
+docker logs
+docker logs --tail 100 -f
+
+백명숙(강사) 수신자 모두 10:25 AM
+docker exec -it mariadb bash
+
+백명숙(강사) 수신자 모두 10:33 AM
+https://start.spring.io/
+
+이혜민(대흥정보) 수신자 모두 10:33 AM
+저 레거시 씁니다
+네
+스프링프레임워크씁니다
+네 적용하지않고있습니다
+
+백명숙(강사) 수신자 모두 10:35 AM
+https://www.baeldung.com/spring-boot-3-spring-6-new
+
+이혜민(대흥정보) 수신자 모두 10:36 AM
+8 쓰고있습니다
+
+백명숙(강사) 수신자 모두 10:40 AM
+https://jakarta.ee/
+
+백명숙(강사) 수신자 모두 10:45 AM
+https://spring.io/projects/spring-framework#support
+PokemonReview-Api
+com.pokemonreview.api
+
+이혜민(대흥정보) 수신자 모두 11:21 AM
+잘 됩니다
+
+임진아(이노트리) 수신자 모두 11:21 AM
+전 중간부터 해서..
+target이 없는데
+방금 target폴더 보여주신거
+생겼어요
+네
+됐습니다
+아뇨 그쪽은 안되서 .. 시간있을 때 따로 해야해요ㅎㅎ..
+아뇨
+네
+넵 리눅스는 써봤는데..
+
+백명숙(강사) 수신자 모두 11:31 AM
+https://drive.google.com/drive/folders/189QcD5MdweVW2txGlY8B7K0heRcfSk-f
+https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.4.32&os=windows&cpu=x86_64&pkg=msi&m=blendbyte
+
+임진아(이노트리) 수신자 모두 11:35 AM
+네
+지금은 잠시 본사라 업무에서 쓰고 있진않아요.
+
+백명숙(강사) 수신자 모두 11:49 AM
+13시에 큐알 태깅 해주세요
+점심식사 맛있게 해주세요~
+
+임진아(이노트리) 수신자 모두 11:49 AM
+넵
+
+백명숙(강사) 수신자 모두 1:06 PM
+https://docs.spring.io/spring-boot/docs/current/api/
+
+백명숙(강사) 수신자 모두 1:12 PM
+spring.profiles.active=test
+application-test.properties
+logging.level.com.pokemonreview.api=debug
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+application-local.properperties
+application-local.properperties
+
+백명숙(강사) 수신자 모두 1:18 PM
+application-local.properties
+application-prod.properties
+
+임진아(이노트리) 수신자 모두 1:21 PM
+네
+아까주싡걸로요 utf8은 체크 했고
+비번도 넣었어요
+넵 해야해요
+클라이언트 켰어요
+
+임진아(이노트리) 수신자 모두 1:28 PM
+DB쪽은 다 했습니다.
+
+이혜민(대흥정보) 수신자 모두 1:31 PM
+ㅁ네
+
+임진아(이노트리) 수신자 모두 1:35 PM
+저 run  하면 port 8080 이미 사용중이라고해서..
+에러나서용.
+없어요
+네
+java.exe
+sp
+run 할까요
+ㄴ ㅔ 됐어요
+
+백명숙(강사) 수신자 모두 1:42 PM
+https://jakarta.ee/specifications/platform/9/apidocs/
+https://github.com/hibernate/
+https://spring.io/projects/spring-data-jpa
+
+백명숙(강사) 수신자 모두 1:50 PM
+2시에 시작합니다~
+
+임진아(이노트리) 수신자 모두 2:03 PM
+mysql : 'mysql' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다.
+네
+변수에 C:\Program Files\MariaDB 10.4\bin 여기까지만 하면되나요
+
+백명숙(강사) 수신자 모두 2:09 PM
+mysql -u boot -p
+boot
+use boot_db;
+show tables;
+docker exec -it mariadb bash
+
+이혜민(대흥정보) 수신자 모두 2:11 PM
+네
+
+임진아(이노트리) 수신자 모두 2:12 PM
+됐습니다.
+네
+
+백명숙(강사) 수신자 모두 2:29 PM
+https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
+
+임진아(이노트리) 수신자 모두 2:44 PM
+네
+
+이혜민(대흥정보) 수신자 모두 2:44 PM
+네
+
+백명숙(강사) 수신자 모두 2:51 PM
+3시에 시작합니다~
+
+백명숙(강사) 수신자 모두 3:15 PM
+assertThat(savedPokemon.getName()).isEqualTo("Pikachu");
+
+임진아(이노트리) 수신자 모두 3:16 PM
+네
+
+백명숙(강사) 수신자 모두 3:17 PM
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+
+백명숙(강사) 수신자 모두 3:24 PM
+assertThat(savedPokemon.getId()).isEqualTo(1);
+
+백명숙(강사) 수신자 모두 3:35 PM
+@TestPropertySource(locations = "classpath:/application-test.properties")
+
+백명숙(강사) 수신자 모두 3:42 PM
+https://stackoverflow.com/questions/22533399/why-do-i-not-see-changes-issued-through-an-update-query-with-spring-data-jpa
+
+백명숙(강사) 수신자 모두 3:51 PM
+4시에 시작합니다~
+
+백명숙(강사) 수신자 모두 4:11 PM
+https://spring.io/projects/spring-data
+
+백명숙(강사) 수신자 모두 4:40 PM
+https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Page.html
+백명숙(강사) 4:44 PM
+https://docs.oracle.com/en/java/javase/17/docs/api/
+https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html
+
+백명숙(강사) 수신자 모두 4:46 PM
+https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Collectors.html
+https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html
+5시에 시작합니다~
+
+
+
+
+
+
+
+
+백명숙(강사) 수신자 모두 9:10 AM
+https://www.notion.so/VueJs3-0-Spring-Boot-REST-API-d040aba4bc3c4068937ad1b0921b685e
+
+이혜민(대흥정보) 수신자 모두 9:11 AM
+네
+
+백명숙(강사) 수신자 모두 9:16 AM
+docker exec -it mariadb bash
+
+백명숙(강사) 수신자 모두 9:22 AM
+https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
+
+백명숙(강사) 수신자 모두 9:29 AM
+https://eglowc.tistory.com/28
+
+
+백명숙(강사) 수신자 모두 9:11 AM
+안녕하세요? 아직 두 분이 출석 않하셔서 연락해보고 확인되면 바로 시작하겠습니다.
+
+최성민(INsoft) 수신자 모두 9:12 AM
+넵
+
+이혜민(대흥정보) 수신자 모두 9:21 AM
+죄송합니다ㅠㅠ
+
+최성민(INsoft) 수신자 모두 9:21 AM
+안녕하세요
+
+백명숙(강사) 수신자 모두 9:29 AM
+docker exec -it mariadb bash
+
+사용자 수신자 모두 9:36 AM
+제 로긴 화면이 어제 마칠때는 나왔는데
+지금은 안나옵니당~
+소스도 sync 맞춰서 받았는데
+네
+네
+사용자 등록은 제가 해보겠습니당~
+어제 그시간에 회의를 해서~ ^^;;
+
+백명숙(강사) 수신자 모두 9:41 AM
+http://localhost:8080/api/auth/register
+{
+    "username":"admin",
+    "password":"123456",
+    "firstName":"둘리",
+    "lastName":"박",
+    "role":"ROLE_ADMIN"
+}
+
+임진아(이노트리) 수신자 모두 9:41 AM
+안녕하세요.전 인증이 안되는데..
+토큰쪽을 빼먹어서 그런거같아요
+
+사용자 수신자 모두 9:41 AM
+저도 인증이 안됩니당
+감사합니다
+
+임진아(이노트리) 수신자 모두 9:44 AM
+네..공유가
+
+임진아(이노트리) 수신자 모두 9:49 AM
+아네
+
+백명숙(강사) 수신자 모두 9:49 AM
+https://github.com/mysoyul/FrontEnd_PokemonReview
+
+임진아(이노트리) 수신자 모두 9:54 AM
+아 네네
+
+사용자 수신자 모두 9:54 AM
+네네~
+
+임진아(이노트리) 수신자 모두 9:55 AM
+도와주시면 좋을것같아요
+빨리해야할것같아서
+네
+
+백명숙(강사) 수신자 모두 9:58 AM
+10시 5분에 시작합니다~
+
+백명숙(강사) 수신자 모두 10:06 AM
+users.store.js
+https://www.notion.so/VueJs3-0-Spring-Boot-REST-API-d040aba4bc3c4068937ad1b0921b685e?pvs=4
+
+백명숙(강사) 수신자 모두 10:44 AM
+BadResourceException
+
+백명숙(강사) 수신자 모두 11:00 AM
+11시5분에 시작합니다~
+
+백명숙(강사) 수신자 모두 11:10 AM
+https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+
+사용자 수신자 모두 11:29 AM
+네
+
+임진아(이노트리) 수신자 모두 11:29 AM
+네
+
+사용자 수신자 모두 11:30 AM
+나옵니다
+
+사용자 수신자 모두 11:49 AM
+감사합니다~
+
+백명숙(강사) 수신자 모두 11:49 AM
+13시에 큐알 태깅해주세요
+점심식사 맛있게 하세요~
+
+임진아(이노트리) 수신자 모두 1:05 PM
+아 저있어서 따로 찍을게요
+
+백명숙(강사) 수신자 모두 1:37 PM
+:disabled="user ? true : false"
+
+임진아(이노트리) 수신자 모두 1:48 PM
+네~
+
+백명숙(강사) 수신자 모두 1:49 PM
+2시에 시작합니다~
+
+백명숙(강사) 수신자 모두 2:01 PM
+pokemons.store.js
+
+백명숙(강사) 수신자 모두 2:40 PM
+java -version
+
+사용자 수신자 모두 2:42 PM
+제 OS는  jdk21인데
+
+사용자 수신자 모두 2:42 PM
+jdk 21인데 괜찮을까요
+됩니다
+감사합니다~
+됩니다
+
+백명숙(강사) 수신자 모두 2:45 PM
+mvnw clean package -Dmaven.test.skip=true
+java -jar target\springboot-vuejs-backend.jar
+
+백명숙(강사) 수신자 모두 2:55 PM
+3시5분에 시작합니다~
+
+백명숙(강사) 수신자 모두 3:06 PM
+mvnw clean package -Dmaven.test.skip=true
+Dockerfile
+
+백명숙(강사) 수신자 모두 3:12 PM
+https://hub.docker.com/
+
+이혜민(대흥정보) 수신자 모두 3:13 PM
+네
+
+임진아(이노트리) 수신자 모두 3:13 PM
+만들어놨어요
+네
+
+이혜민(대흥정보) 수신자 모두 3:24 PM
+네
+
+임진아(이노트리) 수신자 모두 3:25 PM
+저 하구있어요~ 패스워드좀 찾느라..
+감사합니다ㅎㅎ
+푸시했어요
+
+이혜민(대흥정보) 수신자 모두 3:28 PM
+네
+
+사용자 수신자 모두 3:35 PM
+있습니당
+잠깐 불려갔다가 도커 로긴 이 안되서
+다 만들었습니당
+도커만 로긴이 안되네요
+할줄은 압니당
+네네~
+
+백명숙(강사) 수신자 모두 3:43 PM
+DOCKER_USERNAME
+DOCKER_PASSWORD
+
+이혜민(대흥정보) 수신자 모두 3:49 PM
+네
+
+백명숙(강사) 수신자 모두 3:51 PM
+git pull origin main
+
+사용자 수신자 모두 3:52 PM
+혹시 요상태인데
+충돌 해결해야 하나요~
+넹
+
+사용자 수신자 모두 3:56 PM
+네네
+
+임진아(이노트리) 수신자 모두 3:59 PM
+죄송한데 저는 어제 중간에 안되서 강사님이 주신 git 파일 받아서 했거든요. 그래서 git 연동이 안되어 있는데 어떻게 연동하나요?
+
+사용자 수신자 모두 3:59 PM
+maven.yaml 잘 내려 왔습니다.
+
+백명숙(강사) 수신자 모두 3:59 PM
+https://github.com/mysoyul/BackEnd_PokemonReview
+
+임진아(이노트리) 수신자 모두 4:01 PM
+넵ㅋ
+클론
+부분
+네네
+
+이혜민(대흥정보) 수신자 모두 4:11 PM
+네
+잠시만요
+네
+잠시만요
+
+백명숙(강사) 수신자 모두 4:12 PM
+DOCKER_USERNAME
+DOCKER_PASSWORD
+
+이혜민(대흥정보) 수신자 모두 4:13 PM
+네
+
+임진아(이노트리) 수신자 모두 4:16 PM
+그러네용
+
+이혜민(대흥정보) 수신자 모두 4:16 PM
+네 올라왔습니다
+
+사용자 수신자 모두 4:16 PM
+도커허브가 막혀서
+로긴 자체가 안되요
+
+백명숙(강사) 수신자 모두 4:19 PM
+aws 콘솔에 루트계정으로 로그인 미리 해주세요
+4시25분에 시작합니다~
+
+백명숙(강사) 수신자 모두 4:27 PM
+https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html
+
+사용자 수신자 모두 4:29 PM
+저는 aws도 막혔네여
+
+임진아(이노트리) 수신자 모두 4:29 PM
+회사 iam 계정으로 해도되나요?
+서울 됩니다
+

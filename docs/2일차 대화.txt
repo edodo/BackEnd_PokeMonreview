@@ -1,0 +1,207 @@
+백명숙(강사) 수신자 모두 9:10 AM
+https://www.notion.so/VueJs3-0-Spring-Boot-REST-API-d040aba4bc3c4068937ad1b0921b685e
+
+이혜민(대흥정보) 수신자 모두 9:11 AM
+네
+
+백명숙(강사) 수신자 모두 9:16 AM
+docker exec -it mariadb bash
+
+백명숙(강사) 수신자 모두 9:22 AM
+https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
+
+백명숙(강사) 수신자 모두 9:29 AM
+https://eglowc.tistory.com/28
+
+사용자 수신자 모두 9:48 AM
+넵 갖고 있습니당
+
+백명숙(강사) 수신자 모두 9:51 AM
+10시에 시작합니다~
+
+이혜민(대흥정보) 수신자 모두 10:06 AM
+네
+
+임진아(이노트리) 수신자 모두 10:06 AM
+네
+
+사용자 수신자 모두 10:06 AM
+네
+
+백명숙(강사) 수신자 모두 10:12 AM
+git remote add origin
+git branch -m master main
+git pull origin main
+
+백명숙(강사) 수신자 모두 10:18 AM
+git config remote.origin.url
+git remote set-url origin
+git push -u origin main
+
+백명숙(강사) 수신자 모두 10:34 AM
+http://localhost:8080/api/auth/register
+
+이혜민(대흥정보) 수신자 모두 10:39 AM
+네
+네
+
+임진아(이노트리) 수신자 모두 10:41 AM
+전 아까 못한부분 따라가야되서..ㅎㅎ
+
+백명숙(강사) 수신자 모두 10:42 AM
+https://github.com/mysoyul/BackEnd_PokemonReview
+
+사용자 수신자 모두 10:42 AM
+네네
+
+백명숙(강사) 수신자 모두 10:44 AM
+https://jwt.io/
+
+백명숙(강사) 수신자 모두 10:52 AM
+11시에 시작합니다~
+
+백명숙(강사) 수신자 모두 11:32 AM
+http://localhost:8080/api/auth/login
+{
+    "password":"123456",
+    "username":"admin"
+}
+
+이혜민(대흥정보) 수신자 모두 11:34 AM
+네
+
+사용자 수신자 모두 11:35 AM
+넵
+
+백명숙(강사) 수신자 모두 11:51 AM
+13시에 큐알 태깅해주세요
+점심식사 맛있게 하세요~
+
+백명숙(강사) 수신자 모두 1:04 PM
+https://www.baeldung.com/spring-onceperrequestfilter
+
+백명숙(강사) 수신자 모두 1:21 PM
+https://github.com/mysoyul/Rest_Hateoas_Swagger/blob/main/src/main/java/com/boot3/myrestapi/config/SecurityConfig.java
+
+백명숙(강사) 수신자 모두 1:27 PM
+https://github.com/mysoyul/BackEnd_PokemonReview
+userResponse.setFirst(userEntityPage.isFirst());
+
+백명숙(강사) 수신자 모두 1:44 PM
+http://localhost:8080/api/admin/users
+
+사용자 수신자 모두 1:47 PM
+잠깐 불려갔다와서~
+
+백명숙(강사) 수신자 모두 1:51 PM
+2시에 시작합니다~
+
+백명숙(강사) 수신자 모두 2:09 PM
+http://localhost:8080/api/pokemon/1/reviews/1
+https://vitejs.dev/
+
+백명숙(강사) 수신자 모두 2:18 PM
+https://github.com/vuejs/create-vue
+https://pinia.vuejs.org/
+
+사용자 수신자 모두 2:35 PM
+넵
+
+임진아(이노트리) 수신자 모두 2:35 PM
+깔구있어여
+
+백명숙(강사) 수신자 모두 2:37 PM
+npm create vue@latest
+
+임진아(이노트리) 수신자 모두 2:38 PM
+Vue Snippets 깔아야되죠? Vue3 Snippets 말구
+
+백명숙(강사) 수신자 모두 2:40 PM
+https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets
+
+임진아(이노트리) 수신자 모두 2:40 PM
+넵
+아뇨없었어요
+
+백명숙(강사) 수신자 모두 2:42 PM
+npm create vue@latest
+vue3-pokemon-client
+
+임진아(이노트리) 수신자 모두 2:46 PM
+터미널에서 npm이 안될때는..
+네네
+
+임진아(이노트리) 수신자 모두 2:48 PM
+커맨드에서 아ㄴ머ㄱ어요
+아 노드js가 안깔려서
+
+백명숙(강사) 수신자 모두 2:50 PM
+https://drive.google.com/drive/folders/189QcD5MdweVW2txGlY8B7K0heRcfSk-f
+
+임진아(이노트리) 수신자 모두 2:50 PM
+넵
+
+백명숙(강사) 수신자 모두 2:51 PM
+3시에 시작합니다~
+
+사용자 수신자 모두 3:02 PM
+넹
+수업만..
+
+임진아(이노트리) 수신자 모두 3:03 PM
+예~전에 ㅉㅗ그,ㅁ
+지금 크리에이트 주ㅇㅇㅣㅇㅔㅇㅕ
+
+백명숙(강사) 수신자 모두 3:06 PM
+--port 3000
+npm i vee-validate
+npm run dev
+
+백명숙(강사) 수신자 모두 3:40 PM
+https://github.com/mysoyul/FrontEnd_PokemonReview
+
+백명숙(강사) 수신자 모두 3:52 PM
+4시2분에 시작합니다~
+
+백명숙(강사) 수신자 모두 4:07 PM
+.env.development
+.env.production
+
+백명숙(강사) 수신자 모두 4:13 PM
+https://jsbin.com/
+
+백명숙(강사) 수신자 모두 4:20 PM
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// Expected output: true
+
+console.log(pets.includes('at'));
+// Expected output: false
+
+백명숙(강사) 수신자 모두 4:53 PM
+5시3분에 시작합니다~
+
+사용자 수신자 모두 5:30 PM
+잘됩니당..
+따라만해서..
+
+백명숙(강사) 수신자 모두 5:31 PM
+admin / 123456
+boot / 123456
+
+이혜민(대흥정보) 수신자 모두 5:31 PM
+네 잘됩니다
+
+이혜민(대흥정보) 수신자 모두 5:52 PM
+네
+감사합니다
+
+임진아(이노트리) 수신자 모두 5:52 PM
+고생하셨습니다
+
+사용자 수신자 모두 5:52 PM
+감사합니다~ 수고하셨습니다.
+
+백명숙(강사) 수신자 모두 5:52 PM
+내일 9시 10분에 뵐께요

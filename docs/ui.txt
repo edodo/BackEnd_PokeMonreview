@@ -1,0 +1,32 @@
+vite 기반 vue 생성 하는 프로젝트
+ npm create vue@latest
+Pinia
+ 
+ 
+1. create vue project
+cd C:\study\vueandspring\workspaces
+npm create vue@latest
+
+Vue.js - The Progressive JavaScript Framework
+
+√ Project name: ... vue3-pokemon-client
+√ Add TypeScript? ... No 
+√ Add JSX Support? ... No
+√ Add Vue Router for Single Page Application development? ...  Yes
+√ Add Pinia for state management? ...  Yes
+√ Add Vitest for Unit Testing? ... No
+√ Add an End-to-End Testing Solution? » No
+√ Add ESLint for code quality? ... Yes
+√ Add Prettier for code formatting? ... No
+
+2. npm install
+C:\study\vueandspring\workspaces\vue3-pokemon-client>npm i
+npm run dev
+
+npm i vee-validate
+
+3. 시작구조
+index.html : div -> src/main.js -> App.vue 호출
+
+RouterLink : 링크
+RouterView : 뿌려지는 영역

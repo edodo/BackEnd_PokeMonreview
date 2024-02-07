@@ -1,0 +1,52 @@
+1. command prompt에서  JAVA_HOME 설정 ( jdk17 폴더 위치는 각자의 폴더로 설정 합니다. )
+set JAVA_HOME=C:\study\jdk\jdk-17.0.2
+set PATH=%JAVA_HOME%\bin;%PATH%
+
+2. jar 파일 생성하기
+mvnw clean package -Dmaven.test.skip=true
+
+3. jar 실행 명령
+1)
+java -jar target\springboot-vuejs-backend.jar
+
+2)
+spring.profiles.active=prod
+: program argument 로 환경 변수 설정
+java -jar target\springboot-vuejs-backend.jar --spring.profiles.active=prod
+3)
+: vm argument 로 환경 변수 설정
+java -jar -Dspring.profiles.active=prod  target\springboot-vuejs-backend.jar
+
+
+docker build -t csm0222/springbootvuejs:boot_v1 .
+docker images -a
+
+docker login -u csm0222
+docker push csm0222/springbootvuejs:boot_v1
+docker rmi csm0222/springbootvuejs:boot_v1
+
+docker tag mariadb:10.4.16 csm0222/myrepo:mydb
+docker push csm0222/myrepo:mydb
+
+
+4. gitflow 
+1) gitflow 배포를 위한 secret 등록
+Settings > Secrets and variables > Actions > Repository secrets > New repository secrets
+DOCKER_USERNAME bmsvega2k
+
+2) actions에 gitflow 를 위한 maven 플러그인 사용
+Java with Maven > configure
+commit change
+
+3) 로컬에 pull 받아서 
+
+
+5. AWS 생성
+1) VPC 생성
+VPC 생성하기
+ -VPC 등 선택 
+ -- 자동생성 : seoul
+ - 생성버튼 클릭
+
+2) EC2 인스턴스 시작
+인스턴스 시작

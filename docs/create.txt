@@ -1,0 +1,78 @@
+[docker mariadb 설치]
+   1 wsl -l -v
+   2 cd c:\
+   3 dir
+   4 cd workspace
+   5 mkdir workspace
+   6 cd .\study\
+   7 dir
+   8 cd .\vueandspring\
+   9 dir
+  10 mkdir workspaces
+  11 cd .\workspaces\
+  12 mkdir util
+  13 cd .\util\
+  14 docker pull mariadb:10.4.16
+  15 docker images -a
+  16 docker run --name mariadb -d -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=maria mariadb:10.4.16 --chara...
+  17 docker ps -a
+  18 docker exec -it mariadb /bin/bash
+  
+  mysql -u root -p
+  maria
+  
+	MariaDB [(none)]> show databases;
+	MariaDB [(none)]> use mysql;
+	MariaDB [mysql]> create database boot_db; 
+	MariaDB [mysql]> CREATE USER 'boot'@'%' IDENTIFIED BY 'boot';
+	MariaDB [mysql]> GRANT ALL PRIVILEGES ON *.* TO 'boot'@'%';
+	MariaDB [mysql]> flush privileges; 
+	MariaDB [mysql]> select user, host from user;
+	MariaDB [mysql]> exit; 
+	
+  mysql -u boot -p
+  boot
+  
+  
+[git]
+1. 토큰인증 방법
+https://github.com/settings/apps
+settings -> developer settings -> Personal access token -> 
+token(classic) -> generate classic
+권한
+repo, workflow, gist, 
+
+* access  token
+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
+
+
+
+2. git project 생성
+BackEnd_PokeMonreview
+spring boot3 기반 backend 프로젝트
+
+add a readme file
+
+
+3. intellij 
+gitbash 열기
+git init
+
+git config user.name
+git config user.email
+git init
+git branch -M main
+git remote add origin https://github.com/edodo/BackEnd_PokeMonreview.git
+git add .
+git commit -m 'initial commit'
+
+git config remote.origin.url
+# 위에서 git remote add origin  으로 설정된 것을 git remote set-url origin 으로 수정하겠다는 명령어
+git remote set-url origin https://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@github.com/edodo/BackEnd_PokeMonreview.git
+git config remote.origin.url
+
+git push -u origin main
+
+CREATE USER 'boot'@'%' IDENTIFIED BY 'boot';
+GRANT ALL PRIVILEGES ON *.* TO 'boot'@'%';
+FLUSH PRIVILEGES;
